@@ -53,7 +53,7 @@ h3 {
 }
 
 .me {
-  position: fixed;
+  position: absolute;
   bottom: 5px;
   font-size: 0.9rem;
 }
