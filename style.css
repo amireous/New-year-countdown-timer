@@ -9,7 +9,6 @@ body {
   color: #ffff;
 }
 .container {
-  position: fixed;
   min-height: 100vh;
   display: flex;
   justify-content: center;
