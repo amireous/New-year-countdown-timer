@@ -53,8 +53,8 @@ h3 {
 }
 
 .me {
-  position: absolute;
-  bottom: 5px;
+  position: fixed;
+  bottom: 0;
   font-size: 0.9rem;
 }
 .me a {
