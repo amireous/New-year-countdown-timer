@@ -5,12 +5,16 @@ const dayEL = document.querySelector(".day");
 const hourEL = document.querySelector(".hour");
 const minuteEL = document.querySelector(".minute");
 const secondEL = document.querySelector(".second");
-
+let yearCounter = 3;
 const newYearCountDown = function () {
   // declare dates
-  const newYearDate = new Date("January 1, 2023 00:00:00").getTime();
+  let newYearDate = new Date(`January 1, 202${yearCounter} 00:00:00`).getTime();
   const now = new Date().getTime();
   const remainingTime = newYearDate - now;
+
+  if (String(remainingTime).startsWith('-')) {
+    yearCounter += 1;
+  }
 
   // date conversion measures
   const second = 1000;
