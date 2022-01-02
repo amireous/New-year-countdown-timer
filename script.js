@@ -8,7 +8,7 @@ const secondEL = document.querySelector(".second");
 
 const newYearCountDown = function () {
   // declare dates
-  const newYearDate = new Date("January 1, 2022 00:00:00").getTime();
+  const newYearDate = new Date("January 1, 2023 00:00:00").getTime();
   const now = new Date().getTime();
   const remainingTime = newYearDate - now;
 
@@ -31,7 +31,7 @@ const newYearCountDown = function () {
     Math.floor((remainingTime % minute) / second)
   ).padStart(2, 0);
 
-  // use them with DOM elemnts
+  // use them with DOM elements
   dayEL.textContent = textDays;
   hourEL.textContent = textHours;
   minuteEL.textContent = textMinutes;
